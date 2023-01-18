@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from opentelemetry.instrumentation.fastapi import FastAPIInstrumentor
 from starlette.requests import Request
 from access import WHITELIST
 # from mangum import Mangum
@@ -6,7 +7,7 @@ from EMS.ems_tracking_service import EMSTrackingService
 from GlobalTrack.global_track_service import GlobalTrackingService
 
 app = FastAPI()
-
+FastAPIInstrumentor.instrument_app(app)
 
 # handler = Mangum(app)
 
