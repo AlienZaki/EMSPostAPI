@@ -7,7 +7,7 @@ from EMS.ems_tracking_service import EMSTrackingService
 from GlobalTrack.global_track_service import GlobalTrackingService
 
 app = FastAPI()
-FastAPIInstrumentor.instrument_app(app)
+# FastAPIInstrumentor.instrument_app(app)
 
 # handler = Mangum(app)
 
