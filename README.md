@@ -92,7 +92,7 @@ Make a `GET` request with proxy:
 
 ###  **NOTE:** If you updated anything in the code or even access whitelist run:
 
-> docker-compose up -d --force
+> docker-compose up -d --build --force
 
 
 ## Other useful commands:
