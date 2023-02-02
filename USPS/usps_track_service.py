@@ -4,7 +4,7 @@ from requests.exceptions import ReadTimeout
 
 class USPSTrackingService:
     def __init__(self, proxy=False,):
-        self.splash = Splash()
+        self.splash = Splash(proxy)
 
     def parse_html(self, html):
         res = {'success': False}
