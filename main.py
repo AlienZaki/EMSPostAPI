@@ -25,7 +25,7 @@ def protected(func):
 
 @app.get("/")
 def root():
-    return {"message": "EMS API v2.0"}
+    return {"message": "EMS API v3.0"}
 
 
 @app.get("/ems/track")
